@@ -12,6 +12,7 @@
 		9B2E79B017253E8800C1A5AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B2E79AE17253E8800C1A5AD /* InfoPlist.strings */; };
 		9B2E79B617253EB300C1A5AD /* OAuthLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC042D71642D2F00013C8FD /* OAuthLoginView.xib */; };
 		9B56896E166CDBFE00F248E8 /* TwitterShareRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56896D166CDBFE00F248E8 /* TwitterShareRequest.m */; };
+		9B593985187AC3F600251BC5 /* TwitterShareMediaRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B593984187AC3F600251BC5 /* TwitterShareMediaRequest.m */; };
 		9B78BF6E1680A4DF00031F02 /* TwitterShareRequest.h in Copy Files (84 items) */ = {isa = PBXBuildFile; fileRef = 9B56896C166CDBFE00F248E8 /* TwitterShareRequest.h */; };
 		9B9BA74E16B7C8D200F2AC1D /* FQLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9BA74D16B7C8D200F2AC1D /* FQLRequest.m */; };
 		9B9BA75216B7DF1200F2AC1D /* FQLFriendsBaseOnNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9BA75116B7DF1200F2AC1D /* FQLFriendsBaseOnNotification.m */; };
@@ -253,6 +254,8 @@
 		9B2E79B117253E8800C1A5AD /* SocialConnetBundle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialConnetBundle-Prefix.pch"; sourceTree = "<group>"; };
 		9B56896C166CDBFE00F248E8 /* TwitterShareRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterShareRequest.h; sourceTree = "<group>"; };
 		9B56896D166CDBFE00F248E8 /* TwitterShareRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterShareRequest.m; sourceTree = "<group>"; };
+		9B593983187AC3F600251BC5 /* TwitterShareMediaRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterShareMediaRequest.h; sourceTree = "<group>"; };
+		9B593984187AC3F600251BC5 /* TwitterShareMediaRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterShareMediaRequest.m; sourceTree = "<group>"; };
 		9B9BA74C16B7C8D200F2AC1D /* FQLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQLRequest.h; sourceTree = "<group>"; };
 		9B9BA74D16B7C8D200F2AC1D /* FQLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQLRequest.m; sourceTree = "<group>"; };
 		9B9BA75016B7DF1000F2AC1D /* FQLFriendsBaseOnNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQLFriendsBaseOnNotification.h; sourceTree = "<group>"; };
@@ -710,6 +713,8 @@
 				9BF0D0AE164829F400A06082 /* TwitterUserLookUpRequest.m */,
 				9BC6BC901648E552001DD286 /* TwitterProfileRequest.h */,
 				9BC6BC911648E552001DD286 /* TwitterProfileRequest.m */,
+				9B593983187AC3F600251BC5 /* TwitterShareMediaRequest.h */,
+				9B593984187AC3F600251BC5 /* TwitterShareMediaRequest.m */,
 			);
 			path = TwitterLib;
 			sourceTree = "<group>";
@@ -850,6 +855,7 @@
 				9BC6BC921648E552001DD286 /* TwitterProfileRequest.m in Sources */,
 				9B56896E166CDBFE00F248E8 /* TwitterShareRequest.m in Sources */,
 				9B9BA74E16B7C8D200F2AC1D /* FQLRequest.m in Sources */,
+				9B593985187AC3F600251BC5 /* TwitterShareMediaRequest.m in Sources */,
 				9B9BA75216B7DF1200F2AC1D /* FQLFriendsBaseOnNotification.m in Sources */,
 				9B1CFF9F16BF9087001709A0 /* FacebookPhotoUpload.m in Sources */,
 				9BB0EECC17537AC2007BF819 /* FacebookGraphAppRequest.m in Sources */,

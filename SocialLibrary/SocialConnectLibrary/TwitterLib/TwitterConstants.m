@@ -37,5 +37,5 @@ NSString* const TWITTER_DIRECT_MESSAGE_URL = @"https://api.twitter.com/1/direct_
 NSString* const TWITTER_PROFILE_URL = @"https://api.twitter.com/1/account/verify_credentials.json";
 
 NSString* const TWITTER_SHARE_URL = @"https://api.twitter.com/1/statuses/update.json";
-
+NSString* const TWITTER_SHARE_MEDIA_URL = @"https://upload.twitter.com/1/statuses/update_with_media.json";
 @end

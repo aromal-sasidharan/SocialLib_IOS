@@ -23,4 +23,5 @@ extern NSString* const TWITTER_USER_LOOK_UP_URL;
 extern NSString* const TWITTER_DIRECT_MESSAGE_URL;
 extern NSString* const TWITTER_PROFILE_URL;
 extern NSString* const TWITTER_SHARE_URL;
+extern NSString* const TWITTER_SHARE_MEDIA_URL;
 @end

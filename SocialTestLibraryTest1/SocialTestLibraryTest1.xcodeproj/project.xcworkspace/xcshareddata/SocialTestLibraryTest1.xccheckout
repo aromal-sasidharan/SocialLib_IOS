@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CD5760FF-F2A9-41E2-80AC-D57BE35A14F7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SocialTestLibraryTest1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EE41FB44-3DDE-4411-9DA7-BB9D9E49B70F</key>
+		<string>https://github.com/aromal-sasidharan/SocialLib_IOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SocialTestLibraryTest1/SocialTestLibraryTest1.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EE41FB44-3DDE-4411-9DA7-BB9D9E49B70F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/aromal-sasidharan/SocialLib_IOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EE41FB44-3DDE-4411-9DA7-BB9D9E49B70F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EE41FB44-3DDE-4411-9DA7-BB9D9E49B70F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SocialConnectLibrary</string>
+		</dict>
+	</array>
+</dict>
+</plist>
