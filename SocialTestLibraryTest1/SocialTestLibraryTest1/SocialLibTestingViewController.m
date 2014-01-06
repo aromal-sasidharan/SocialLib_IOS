@@ -82,8 +82,8 @@
 -(void)twitterLoginSuccess
 {
     NSLog(@"granded");
-//    self.twitterProfileRequest = [[TwitterProfileRequest alloc]init];
-//    self.twitterProfileRequest.twitterResultantDelegate = self;
-//    [self.twitterProfileRequest executeRequest];
+   self.twitterProfileRequest = [[TwitterProfileRequest alloc]init];
+    self.twitterProfileRequest.twitterResultantDelegate = self;
+    [self.twitterProfileRequest executeRequest];
 }
 @end

@@ -263,28 +263,29 @@
     
     
     
-//    if ([twitterAccounts count] <= 0) {
-//        
-//        // Use the first account for simplicity
-//        if([twitterLoginDelegate respondsToSelector:@selector(twitterAccountNotConfigured)])
-//        {
-//            
-//            [twitterLoginDelegate twitterAccountNotConfigured];
-//        }
-//
-//        
-//        return;
-//        
-//    }
+    if ([twitterAccounts count] <= 0) {
+        
+        // Use the first account for simplicity
+        if([twitterLoginDelegate respondsToSelector:@selector(twitterAccountNotConfigured)])
+        {
+            
+            [twitterLoginDelegate twitterAccountNotConfigured];
+        }
+
+        
+        return;
+        
+    }
     isTwitterAccount = false;
     
-    //  Request permission from the user to access the available Twitter accounts
+    NSLog(@"Here");
     
     [store requestAccessToAccountsWithType:twitterAccountType
      
                      withCompletionHandler:^(BOOL granted, NSError *error) {
-                         
+                             NSLog(@"Here iam");
                          if (!granted) {
+                                NSLog(@"Here iam not granted");
                              self.isTwitterAccount = FALSE;
                             if([twitterLoginDelegate respondsToSelector:@selector(twitterAccountNotConfigured)])
                             {
@@ -295,7 +296,8 @@
                          }
                          
                          else {
-                             
+                             NSLog(@"Here iam  granted");
+
                               self.isTwitterAccount = TRUE;
                                self.isTwitterAccount = YES;
                              NSArray *twitterAccounts =
@@ -305,7 +307,7 @@
                              
                              
                              if ([twitterAccounts count] > 0) {
-                                 
+                                  NSLog(@"Accounts found");
                                  // Use the first account for simplicity
                                  if([twitterLoginDelegate respondsToSelector:@selector(twitterLoginSuccess)])
                                  {
@@ -315,6 +317,11 @@
 
                                  
                                  
+                             }
+                             else
+                             {
+                                 NSLog(@"Accounts not found");
+
                              }
                              // Grab the available accounts
                          }}];
