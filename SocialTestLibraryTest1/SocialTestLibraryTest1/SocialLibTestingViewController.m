@@ -14,7 +14,7 @@
 @end
 
 @implementation SocialLibTestingViewController
-
+@synthesize aTwitterShareRequest;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -57,6 +57,16 @@
 //    [aSocialLibTestingAppDelegate linkedInLogin:self];
 
 }
+
+- (IBAction)twitterPostSample:(id)sender {
+    
+    aTwitterShareRequest = [[TwitterShareRequest alloc] init];
+    
+    [aTwitterShareRequest addStatus:@"Python Logo Here"];
+    aTwitterShareRequest.twitterResultantDelegate = self;
+    [aTwitterShareRequest executeRequest];
+    
+}
 -(void)twitterRequestDidRecieveError:(NSError *)error andType:(NSString *)Type
 {
     NSLog(@"%@",error);
@@ -86,4 +96,5 @@
     self.twitterProfileRequest.twitterResultantDelegate = self;
     [self.twitterProfileRequest executeRequest];
 }
+
 @end
