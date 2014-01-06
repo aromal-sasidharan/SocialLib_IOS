@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SocialConnetBundle' target in the 'SocialConnetBundle' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
