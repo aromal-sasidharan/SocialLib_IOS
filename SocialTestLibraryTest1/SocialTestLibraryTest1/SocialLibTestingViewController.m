@@ -14,7 +14,7 @@
 @end
 
 @implementation SocialLibTestingViewController
-@synthesize aTwitterShareRequest;
+@synthesize aTwitterShareRequest,aFacebookAppRequest;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -67,6 +67,20 @@
     [aTwitterShareRequest executeRequest];
     
 }
+
+- (IBAction)sendFbNotification:(id)sender {
+    
+    aFacebookAppRequest = [[FacebookAppRequest alloc]init];
+    [aFacebookAppRequest addMessage:@"hi message"];
+    [aFacebookAppRequest addDataWithName:@"data1" andValue:@"value1"];
+     [aFacebookAppRequest addDataWithName:@"datan" andValue:@"valuen"];
+    [aFacebookAppRequest addFriendId:@"100002655314473"];
+    
+    SocialLibTestingAppDelegate* aSocialLibTestingAppDelegate = (SocialLibTestingAppDelegate*)[[UIApplication sharedApplication]delegate];
+    [aSocialLibTestingAppDelegate openDialogWith:aFacebookAppRequest andDelegate:self];
+    
+    
+}
 -(void)twitterRequestDidRecieveError:(NSError *)error andType:(NSString *)Type
 {
     NSLog(@"%@",error);
@@ -96,5 +110,8 @@
     self.twitterProfileRequest.twitterResultantDelegate = self;
     [self.twitterProfileRequest executeRequest];
 }
-
+-(void)facebookDialogClosedWithUrl:(NSDictionary*)params
+{
+    NSLog(@"params recived %@",params);
+}
 @end
